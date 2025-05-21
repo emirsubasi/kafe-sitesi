@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri - Vitamin Pasta Cafe</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Vitamin Pasta Cafe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menü</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iletisim.html">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="py-5 mt-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Galeri</h2>
+
+        <!-- Filter Buttons -->
+        <div class="row mb-4">
+          <div class="col-12 text-center">
+            <div class="btn-group" role="group">
+              <button
+                type="button"
+                class="btn btn-outline-dark active"
+                data-filter="all"
+              >
+                Tümü
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-filter="kahve"
+              >
+                Kahveler
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-filter="tatli"
+              >
+                Tatlılar
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-filter="mekan"
+              >
+                Mekan
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-4">
+          <!-- Coffee Images -->
+          <div class="col-md-4 gallery-item kahve">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+              class="img-fluid rounded"
+              alt="Espresso"
+              style="height: 300px; width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="col-md-4 gallery-item kahve">
+            <img
+              src="https://images.unsplash.com/photo-1572442388796-11668a67e53d"
+              class="img-fluid rounded"
+              alt="Latte"
+              style="height: 300px; width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="col-md-4 gallery-item kahve">
+            <img
+              src="https://images.unsplash.com/photo-1579888944880-d98341245702"
+              class="img-fluid rounded"
+              alt="Cappuccino"
+              style="height: 300px; width: 100%; object-fit: cover"
+            />
+          </div>
+
+          <!-- Dessert Images -->
+          <div class="col-md-4 gallery-item tatli">
+            <img
+              src="https://images.unsplash.com/photo-1551024506-0bccd828d307"
+              class="img-fluid rounded"
+              alt="Tiramisu"
+              style="height: 300px; width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="col-md-4 gallery-item tatli">
+            <img
+              src="https://images.unsplash.com/photo-1551106652-a5bcf4b29ab6"
+              class="img-fluid rounded"
+              alt="Cheesecake"
+              style="height: 300px; width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="col-md-4 gallery-item tatli">
+            <img
+              src="https://images.unsplash.com/photo-1563805042-7684c019e1cb"
+              class="img-fluid rounded"
+              alt="Brownie"
+              style="height: 300px; width: 100%; object-fit: cover"
+            />
+          </div>
+
+          <!-- Venue Images -->
+          <div class="col-md-4 gallery-item mekan">
+            <img
+              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24"
+              class="img-fluid rounded"
+              alt="Cafe Interior"
+              style="height: 300px; width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="col-md-4 gallery-item mekan">
+            <img
+              src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8"
+              class="img-fluid rounded"
+              alt="Cafe Exterior"
+              style="height: 300px; width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="col-md-4 gallery-item mekan">
+            <img
+              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24"
+              class="img-fluid rounded"
+              alt="Cafe Seating"
+              style="height: 300px; width: 100%; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Vitamin Pasta Cafe</h5>
+            <p>bir kafeden daha fazlası</p>
+          </div>
+          <div class="col-md-4">
+            <h5>İletişim</h5>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> yeni mahalle 82/b Araç<br />
+              <i class="fas fa-phone"></i> (0212) 123 45 67<br />
+              <i class="fas fa-envelope"></i> vitaminpastahanesi@gmail.com
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Sosyal Medya</h5>
+            <div class="social-links">
+              <a href="#" class="text-light me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-light me-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-light me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="text-center">
+          <p class="mb-0">
+            &copy; 2025 Vitamin Pasta Cafe. Tüm hakları saklıdır.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS for Gallery Filtering -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll("[data-filter]");
+        const galleryItems = document.querySelectorAll(".gallery-item");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const filter = this.getAttribute("data-filter");
+
+            // Update active button
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            // Filter gallery items
+            galleryItems.forEach((item) => {
+              if (filter === "all" || item.classList.contains(filter)) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
